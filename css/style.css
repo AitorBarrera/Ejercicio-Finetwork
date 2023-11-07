@@ -8,20 +8,12 @@ html, body, main, .container{
     height: 100%;
 }
 
-/*
-.left{
+
+.container{
     background-image: url(../img/chica.jpg);
     background-size: cover;
-    height: 900px;
-    width: 50%;
 }
-*/
 
-.chica{
-    height: 900px;
-    position: fixed;
-    z-index: -1;
-}
 
 .left{
     float: left;
