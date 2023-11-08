@@ -147,12 +147,23 @@ a{
     #botonEnviar{
         margin: 0 auto;
     }
-}
-
-@media screen and (max-width: 532px) {
+    
     .registro{
         text-align: center;
     }
+
+    .registro input{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    label{
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 532px) {
 
     .right h1{
         margin: 0px;
