@@ -8,24 +8,20 @@ html, body, main, .container{
     height: 100%;
 }
 
-
-.container{
+.left{
     background-image: url(../img/chica.jpg);
     background-size: cover;
-}
-
-
-.left{
+    background-repeat: no-repeat;
     float: left;
-    width: 55%;
+    width: 60%;
     height: 100%;
-    padding: 40px 80px;
+    padding: 100px 20% 0 80px;
 }
 
 .logo{
     position: absolute;
-    top: 30px;
-    left: 50px;
+    top: 40px;
+    left: 80px;
 }
 
 .left h1{
@@ -40,7 +36,7 @@ html, body, main, .container{
 .left p{
     margin-top: 60px;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
     text-shadow: 1px 1px black;
     font-family: Nunito Sans, apple-system, sans-serif;
@@ -48,9 +44,9 @@ html, body, main, .container{
 
 .right{
     float: right;
-    width: 45%;
+    width: 40%;
     height: 100%;
-    padding: 40px 120px 40px 40px;
+    padding: 40px 15% 40px 50px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -73,10 +69,11 @@ a{
 .AccesoTelefono, .AccesoEmail{
     display: inline;
     padding: 8px 20px;
+    font-size: 105%;
 }
 
 .AccesoEmail a{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .registro p{
@@ -127,16 +124,37 @@ a{
     background-color: rgb(114, 40, 255);
     border: 0;
 }
+@media screen and (max-width: 1620px) {
+    .AccesoTelefono, .AccesoEmail{
+        display: block;
+        padding: 30px 0 5px 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    .right h1{
+        margin-bottom: 50px;
+    }
+}
 
 @media screen and (max-width: 1122px) {
+    .AccesoTelefono, .AccesoEmail{
+        display: inline;
+        padding: 8px 20px;
+        width: 50%;
+        text-align: center;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
         text-align: center;
+        background-size: cover;
     }
 
     .left{
         width: 100%;
+        padding: 40px 80px;
     }
 
     .right{
